@@ -737,7 +737,6 @@ a:hover, a:focus{
 }
 
 .modal-form-checkbox-icon {
-    fill: transparent;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -750,7 +749,7 @@ a:hover, a:focus{
     border: none;
 }
 
-.visually-hidden:checked+.modal-form-privacy .modal-form-checkbox-icon use {
+.visually-hidden:checked+.modal-form-privacy .modal-form-checkbox-icon {
     fill: #F4F4FD;
 }
 

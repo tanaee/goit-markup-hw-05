@@ -52,7 +52,9 @@
       <section class="hero">
         <div class="container hero_container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-button">Order Service</button>
+          <button type="button" class="hero-button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <section class="qualities-section">
@@ -439,9 +441,9 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <button type="button" class="close-button">
+        <button type="button" class="close-button" data-modal-close>
           <svg class="close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -499,27 +501,28 @@
               class="modal-form-textarea"
             ></textarea>
           </div>
-          <div class="modal-form_checkbox">
+          <div class="privacy-policy">
             <input
               type="checkbox"
+              id="user-privacy"
               value="true"
               name="user-privacy"
-              class="visually-hidden"
-              id="user-privacy"
+              class="privacy-policy-checkbox visually-hidden"
             />
-            <label for="user-privacy" class="modal-form-privacy"
-              >I accept the terms and conditions of the
-              <span class="modal-form-checkbox-icon_container">
-                <svg class="modal-form-checkbox-icon" width="10" height="8">
+            <label for="user-privacy" class="privacy-policy-label">
+              I accept the terms and conditions of the
+              <span class="privacy-policy-span">
+                <svg class="privacy-policy-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-vector"></use>
                 </svg>
               </span>
-              <a href="#" class="modal-form-privacy-link">Privacy Policy</a>
+              <a href="#" class="privacy-policy-link">Privacy Policy</a>
             </label>
           </div>
           <button type="submit" class="modal-form-button">Send</button>
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

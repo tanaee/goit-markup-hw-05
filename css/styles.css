@@ -737,6 +737,7 @@ a:hover, a:focus{
     align-items: center;
     justify-content: center;
     fill: transparent;
+    margin-right: 8px;
 }
 
 .privacy-policy-checkbox:checked + .privacy-policy-label .privacy-policy-span{
@@ -745,7 +746,8 @@ a:hover, a:focus{
     fill: #F4F4FD;
 }
 
-.privacy-policy-icon {}
+.privacy-policy-icon {
+}
 
 .privacy-policy-link {
     line-height: 1.33333;
